@@ -1,0 +1,340 @@
+ * {
+     box-sizing: border-box;
+     border: 0;
+     margin: 0;
+     padding: 0;
+ }
+
+ /* link fonts for poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@500&family=Work+Sans&display=swap');
+
+ body {
+     font-family: 'Poppins', sans-serif;
+
+ }
+
+ .container {
+     padding: 0 5%;
+ }
+
+ /* Nav style start*/
+ nav {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 50px;
+
+ }
+
+ nav span ul {
+     display: flex;
+     list-style: none;
+ }
+
+ nav span a {
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 36px;
+     color: #3A3A3A;
+
+ }
+
+ nav span ul li a {
+     margin-left: 34px;
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 24px;
+
+
+     color: #3A3A3A;
+ }
+
+ /* nav style end */
+
+ /* banner style start */
+ .banner {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 50px 0;
+     gap: 200px;
+
+ }
+
+ .banner>div {
+     flex: 1;
+ }
+
+ .banner-title {
+     font-weight: 700;
+     font-size: 52px;
+     color: #3A3A3A;
+ }
+
+ .banner-description p {
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 24px;
+     color: #3A3A3A;
+
+ }
+
+ .prebook-btn {
+     margin-top: 16px;
+     width: 196px;
+     height: 44px;
+     color: white;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     background: #E02C6D;
+     border-radius: 41px;
+ }
+
+ .banner-image {
+     background-image: url("/images/Circle\ design.svg");
+     background-repeat: no-repeat;
+     background-size: contain;
+
+ }
+
+ .banner-image img {
+     width: 100%;
+ }
+
+ /* Banner-end */
+
+ /* related-site section start */
+ .related-sites {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 50px;
+     justify-content: center;
+     border-top: 1px solid rgb(235, 233, 233);
+     border-bottom: 1px solid rgb(235, 233, 233);
+     padding: 30px 10px;
+     margin-bottom: 100px;
+ }
+
+ /* related site section end */
+
+
+ /* popular collection start */
+ main {
+     padding: 0 77px;
+     margin-bottom: 100px;
+ }
+
+ .collection-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+ }
+
+ .collection {
+     padding: 15px;
+     background: #FFFFFF;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     border-radius: 5px;
+ }
+
+ .collection h2 {
+     font-size: 28px;
+     line-height: 40px;
+     color: #18191F;
+ }
+
+ .price {
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 150%;
+     color: rgba(0, 0, 0, 0.87);
+ }
+
+ .filled {
+     font-size: 11px;
+     color: #FB8200;
+     ;
+ }
+
+ .rate {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 22px;
+     letter-spacing: 0.1px;
+     margin-left: 5px;
+     color: #5E6366;
+ }
+
+ .collection p {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 143%;
+     letter-spacing: 0.018em;
+     color: #787885;
+ }
+
+ /* popular collection end */
+
+ /* featured product start */
+ .featured-products {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 96px;
+     margin-bottom: 100px;
+ }
+
+ .feature-description h2 {
+     font-weight: 700;
+     font-size: 38px;
+     line-height: 60px;
+     color: #0A0826;
+
+ }
+
+ .feature-description p {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 28px;
+     color: #6C6C6C;
+ }
+
+ .feature-description button {
+     width: 155px;
+     height: 44px;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     margin: 20px 0;
+     color: #FFFFFF;
+     background: #E02C6D;
+ }
+
+ /* featured product end */
+
+ /* footer start */
+ footer {
+     height: 239px;
+     background: #0A0826;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ footer h2 {
+     text-align: center;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 36px;
+     color: #FFFFFF;
+     align-items: center;
+ }
+
+ footer p {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 24px;
+     text-align: center;
+     color: #D9DBE1;
+ }
+
+ .media-icon {
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     margin-top: 17px;
+ }
+
+ .media-icon span {
+     color: white;
+ }
+
+ /* footer end */
+
+ /* making responsive for small screen */
+ @media screen and (max-width:576px) {
+
+     nav,
+     nav span ul {
+         flex-direction: column;
+     }
+
+     .collection img {
+         width: 100%;
+     }
+
+     .banner,
+     .featured-products {
+         flex-direction: column-reverse;
+         gap: 10px;
+
+     }
+
+     .banner-title,
+     .feature-description h2 {
+         font-size: 28px;
+         line-height: 40px;
+     }
+
+     .banner-description,
+     .feature-description {
+         text-align: center;
+     }
+
+     main {
+         padding: 2.5%;
+     }
+
+     .collection-container {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .image-container img {
+         width: 100%;
+     }
+ }
+
+ /* making responsive for medium screen */
+ @media screen and (min-width:577px) and (max-width:992px) {
+
+     nav,
+     nav span ul {
+         flex-direction: column;
+     }
+
+     .collection img {
+         width: 100%;
+     }
+
+     .banner,
+     .featured-products {
+         flex-direction: column-reverse;
+         gap: 10px;
+
+     }
+
+     .banner-title,
+     .feature-description h2 {
+         font-size: 28px;
+         line-height: 40px;
+     }
+
+     .banner-description,
+     .feature-description {
+         text-align: center;
+     }
+
+     main {
+         padding: 2.5%;
+     }
+
+     .collection-container {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .image-container img {
+         width: 100%;
+     }
+ }
